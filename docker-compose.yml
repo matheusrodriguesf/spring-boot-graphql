@@ -1,0 +1,12 @@
+version: '3'
+services:
+  compras-db:
+    image: mariadb
+    container_name: compras-db
+    environment:
+      - MYSQL_ROOT_PASSWORD=123456
+      - MYSQL_DATABASE=compras
+      - MYSQL_USER=compras
+      - MYSQL_PASSWORD=123456
+    ports:
+      - 3306:3306
